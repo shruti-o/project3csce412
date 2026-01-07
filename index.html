@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Shruti Oruganti</title>
+        <link id = "style" rel="stylesheet" href="style1.css">
+    </head>
+    <body class="indexBody">
+        <section class="layout">
+            <div class="header">
+                <nav class="navbar">
+                    <div class="navbar-left">
+                        <span class="dot"></span>
+                        <h2> Shruti Oruganti</h2>
+                    </div>
+                    <div class="navbar-right">
+                        <a href = index.html class="active">Home</a></li>
+                        <a href = qualifications.html>Qualifications</a>
+                        <a href = portfolio.html>Portfolio</a>
+                        <a href = service.html>Service</a>
+                        <a href = genai.html>AI</a>
+                        <a onclick = "toggleStyleSheet()">
+                        Change Style
+                        </a>
+                    </div>
+                </nav>
+            </div>
+            <div class="main">
+                <div class="content">
+                    <div class = "intro">
+                        <div class="introImage"><img src="./pictures/headshot1.png"></div>
+                        <div>
+                            <h1>Hello!</h1>
+                            <h2>A bit about me</h2>
+                            <p>I'm Shruti Oruganti, a Computer Engineering junior at Texas A&M University. I am passionate about sustainable and secure hardware design. To learn more about my qualifications, projects or my volunteer experiences, use one of the buttons below.</p>
+                        </div>
+                    </div>
+                    <div class="bar">
+                        <div class="circle"></div>
+                    </div>
+                    <div class = "left">
+                        <div class="linkbuttons">
+                            <a href = qualifications.html>Skills</a>
+                            <a href = portfolio.html>Portfolio</a>
+                            <a href = service.html>Service</a>
+                            <a href = genai.html>AI</a>
+                        </div>
+                        <div class="aboutme">
+                            <h1>About Me!</h1>
+                            <div class="aboutme1">
+                            <p>I'm Shruti Oruganti, a junior at Texas A&M University, pursuing a Bachelor of Science in Computer Engineering through the Craig and Galen Brown Engineering Honors Program. I am passionate about sustainable and secure hardware design. I am currently working as an undergraduate researcher at the AGGIES Lab. My research focus is mainly on hardware vulnerabilities in semiconductor design and supply chains. I have been part of the team that built CapMetro a real time bus tracking app for the TeamUp organization. My main contributions were database management, creation of API calls, and end-to-end testing. I have also been a Software Engineering Intern at Comet, where I redesigned user interfaces and led development initiatives to improve platform performance and engagement. In addition to these academic pursuits, I serve as Programming Lead for WIRED VEX-U Robotics, leading projects in autonomous robotics programming and STEM outreach. My long-term goal is to advance the intersection of secure, high-performance software and hardware systems, driving innovation within the semiconductor industry.</p>
+                            <div class ="pic"><img src="./pictures/aboutme.png"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer">
+                <h2>Contact Information</h2>
+                <div class = "contactinfo">
+                    <p>Email: shruti_oruganti@tamu.edu</p>
+                    <p>Connect with me: <a href="https://www.linkedin.com/in/shrutioruganti/">LinkedIn</a> <a href="https://github.com/Oshruti">Github</a></p>
+                </div>
+            </div>
+        </section>
+        <script>
+            const myDiv = document.getElementById('main');
+            const divHeight = myDiv.offsetHeight;
+            document.documentElement.style.setProperty('--bar-height', `${divHeight}px`);
+        </script>
+        <script src="script.js"></script>
+    </body>
+</html>

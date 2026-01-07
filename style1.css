@@ -1,0 +1,512 @@
+/* General webpage styling */
+.layout {
+    width: 100%;
+    display: grid;
+    grid:
+    "header" auto
+    "main" 1fr
+    "footer" auto
+    / 1fr;
+    gap: 0px;
+}
+
+.header { grid-area: header; }
+.main { grid-area: main; }
+.footer { grid-area: footer; }
+
+.navbar * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Avenir LT 35 Light';
+    src: url('Avenir LT Std 35 Light.otf') format('opentype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+body {
+    font-family: 'Avenir LT 35 Light';
+    margin: 0;
+}
+
+.content {
+    margin: 0px;
+    padding: 0px;
+}
+
+/* Navbar styling */
+
+.navbar {
+    background-color: rgb(235, 223, 211);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 2rem;
+    position: relative;
+}
+
+.navbar::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 5px;
+    border-top: 1px solid black;
+    border-bottom: 2px solid black;
+}
+
+.navbar::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 5px;
+    border-top: 2px solid black;
+    border-bottom: 1px solid black;
+}
+
+.dot {
+    width: 15px;
+    height: 15px;
+    background-color: rgb(214, 162, 32);
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.navbar-left {
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+}
+
+.navbar-left strong {
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+.navbar-right {
+    display: flex;
+    gap: 1rem;
+    font-size: 1rem;
+}
+
+.navbar-right a {
+    text-decoration: none;
+    color: black;
+    padding: 0 0.5rem;
+}
+
+.navbar-right a:not(:last-child) {
+    border-right: 1px solid black;
+}
+
+.navbar-right a.active {
+    color: rgb(214, 162, 32);
+    font-weight: bold;
+}
+
+.navbar-right a:hover {
+    color: rgb(214, 162, 32);
+}
+
+/* Index backgroud */
+.indexBody {
+    background-image: url('./pictures/background.png');
+}
+
+/* Intro header styling */
+.intro {
+    display: flex;
+    align-items: center; 
+    gap: 40px;
+    margin: 50px 300px;
+    line-height: 1.5em;
+}
+
+.introImage img {
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+}
+
+.intro h1 {
+    font-size: 4rem;
+    padding-bottom: 10px;
+}
+
+.intro h2 {
+    font-size: 2rem;
+}
+
+.intro p {
+    font-size: 1rem;
+}
+
+/* Buttons that link to other pages */
+
+.linkbuttons {
+    display: flex;              
+    justify-content: center;    
+    gap: 30px;
+    margin: 40px 0;
+}
+
+.linkbuttons a{
+    background-color: #85a0c1;
+    color: rgb(10, 10, 10);
+    border: 1px solid black;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    font-family: 'Avenir LT 35 Light';
+    text-decoration: none;
+    font-weight:bold;
+}
+
+.linkbuttons a:hover {
+    background-color: #e2be95;
+}
+
+/* About Me pargraph */
+.aboutme {
+    background-color: #e6dfd7;
+    padding:25px;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+
+.aboutme h1{
+    margin:20px 100px;
+}
+
+.aboutme1{
+    display: flex;
+    align-items: center; 
+    gap: 40px;
+    margin:0px 100px;
+    line-height: 1.7em;
+}
+
+.aboutme1 img {
+    width: 400px;
+    height: 300px;
+}
+
+/* Contact info styling */
+.footer {
+    background-color: #d8bc9c;
+    padding-left: 50px;
+    border-top: 2px solid #201100;
+}
+
+/*Title styling*/
+.pageh1{
+    text-align: center;
+    font-size: 3rem;
+    text-decoration: underline;
+}
+
+.pageh1Resume {
+    text-align: center;
+    font-size: 3rem;
+    text-decoration: underline;
+
+}
+
+/* Service page styling */
+.vex {
+    line-height: 1.5em;
+    background-color: rgb(234, 217, 195);
+    border-radius: 12px;
+    border: 1px black;
+    padding:35px;
+    margin:40px;
+}
+
+.vex h2{
+    text-align: center;
+}
+
+.vexContent {
+    display: flex;
+    align-items: center; 
+    gap: 40px;
+    margin:0px 100px;
+    line-height: 1.7em;
+}
+
+.vexContent img {
+  width: 400px;
+  height: 300px;
+}
+
+.txsef {
+    line-height: 1.5em;
+    background-color: rgb(207, 219, 235);
+    border-radius: 12px;
+    border: 1px black;
+    padding:35px;
+    margin:40px;
+}
+
+.txsef h2{
+    text-align: center;
+}
+
+.txsefContent{
+    display: flex;
+    align-items: center; 
+    gap: 40px;
+    margin:0px 100px;
+    line-height: 1.7em;
+}
+
+.txsefContent img {
+  width: 400px;
+  height: 300px;
+}
+
+.bigevent {
+    line-height: 1.5em;
+    background-color: rgb(147, 176, 204);
+    border-radius: 12px;
+    border: 1px black;
+    padding:35px;
+    margin:40px;
+}
+
+.bigevent h2{
+    text-align: center;
+}
+
+.bigeventContent {
+    display: flex;
+    align-items: center; 
+    gap: 40px;
+    margin:0px 100px;
+    line-height: 1.7em;
+}
+
+.bigeventContent img {
+  width: 400px;
+  height: 300px;
+}
+
+.future {
+    line-height: 1.5em;
+    background-color: rgb(93, 137, 173);
+    border-radius: 12px;
+    border: 1px black;
+    padding:35px;
+    margin:40px;
+}
+
+.future h2{
+    text-align: center;
+}
+
+.serviceBody {
+    background-image: url(https://images.pexels.com/photos/1939485/pexels-photo-1939485.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);
+}
+
+/* Qualification page styling */ 
+
+.qualintro{
+    margin-left:22%;
+    margin-right:22%;
+    line-height:1.5em;
+    margin-top: 5%;
+}
+.topHalf {
+  display: flex;
+  align-items: center; 
+  gap: 50px;
+  margin: 50px 0px;
+  line-height: 1.5em;
+  justify-content: center;
+}
+
+.skills {
+    background-color: rgb(220, 243, 255);
+    width: 250px;
+    height: 200px;
+    padding: 50px;
+    font-size: larger;
+}
+
+.skills h2 {
+    font-family: garamond;
+    text-align: center;
+}
+
+.interests {
+    background-color: #aad0f4;
+    width: 250px;
+    height: 200px;
+    padding: 50px;
+    font-size: larger;
+}
+
+.interests h2 {
+    font-family: garamond;
+    text-align: center;
+}
+
+.r {
+    text-align: center;
+}
+
+.resume iframe {
+    width: 80%;
+    height: 600px;
+}
+
+.qualificationsBody {
+    background-image: linear-gradient(rgb(224, 220, 216), rgba(100,120,142));
+    background-size: cover;
+}
+
+/* Portfolio page styling */ 
+.portfoliocard {
+    display: flex;
+    gap: 50px;
+    justify-content: space-between;
+}
+.aggiesLab {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    gap: 50px;
+    margin:0px 20%;
+    line-height: 1.5rem;
+}
+
+.portfoliocard img {
+    width: 50%;
+    height: auto;
+}
+
+.capmetro {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    gap: 50px;
+    margin:0px 20%;
+    line-height: 1.5rem;
+}
+
+.capmetro img {
+    width: 50%;
+    height: auto;
+}
+
+.hackplant {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    gap: 50px;
+    margin:0px 20%;
+    line-height: 1.5rem;
+}
+
+.hackplant img {
+    width: 50%;
+    height: auto;
+}
+
+.cpu {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    gap: 50px;
+    margin:0px 20%;
+    line-height: 1.5rem;
+}
+
+.cpu img {
+    width: 50%;        
+    height: auto;       
+}
+
+.research {
+    padding: 20px;
+    margin:0px;
+}
+
+.research h2{
+    margin-left:20%;
+    font-family: Garamond;
+    font-size: 1.7em;
+}
+
+.software {
+    padding: 20px;
+    margin:0px;
+}
+
+.software h2{
+    margin-left:20%;
+    font-family: Garamond;
+    font-size: 1.7em;
+}
+
+.software h3{
+    margin-left:20%;
+    font-family: Garamond;
+    font-size: 1.4em;
+}
+
+.hardware {
+    padding: 20px;
+    margin:0px;
+}
+
+.hardware h2{
+    margin-left:20%;
+    font-family: Garamond;
+    font-size: 1.7em;
+}
+
+.hardware h3{
+    margin-left:20%;
+    font-family: Garamond;
+    font-size: 1.4em;
+}
+
+.portfolioBody {
+    background-image: linear-gradient(rgb(224, 220, 216), rgba(100,120,142));
+}
+
+.aggiesLab h4 {
+  justify-content: center;
+  align-items: center;
+  font-size:1.3rem;
+}
+
+.hackplant h4 {
+  justify-content: center;
+  align-items: center;
+  font-size:1.3rem;
+}
+
+.capmetro h4 {
+  justify-content: center;
+  align-items: center;
+  font-size:1.3rem;
+}
+
+.cpu h4 {
+  justify-content: center;
+  align-items: center;
+  font-size:1.3rem;
+}

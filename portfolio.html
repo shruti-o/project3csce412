@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Portfolio</title>
+        <link id = "style" rel="stylesheet" href="style1.css">
+    </head>
+    <body class = "portfolioBody">
+        <section class="layout">
+            <div class="header">
+                <nav class="navbar">
+                    <div class="navbar-left">
+                        <span class="dot"></span>
+                        <h2> Shruti Oruganti</h2>
+                    </div>
+                    <div class="navbar-right">
+                        <a href = index.html>Home</a></li>
+                        <a href = qualifications.html>Qualifications</a>
+                        <a href = portfolio.html class="active">Portfolio</a>
+                        <a href = service.html>Service</a>
+                        <a href = genai.html>AI</a>
+                        <a onclick = "toggleStyleSheet()">
+                        Change Style
+                    </a>
+                    </div>
+                </nav>
+            </div>
+            <div class="main">
+                <h1 class="pageh1">Portfolio</h1>
+                <div class="research">
+                    <h2>Research: AGGIES Lab</h2>
+                    <div class ="aggiesLab">
+                        <div class = "portfoliocard">
+                            <p>As an undergraduate research assistant at Aggies Lab, I co-authored a research paper proposing an AI based framework to detect anomalies in the semiconductor supply chain at their source to avoid propagation. The paper has been accepted for publication at the ICAIR 2025 conference in Genoa, Italy. <a href="https://www.aggieslab.org/">Lab Website</a></p>
+                            <img src = "./pictures/poster.jpeg" width = 450 height = 350>
+                        </div>
+                        <div class = "portfoliocard">
+                            <div class="grid-item">
+                                <h4>Research Interests</h4>
+                                <ul>
+                                    <li>AI in Hardware Design</li>
+                                    <li>Chip Design</li>
+                                    <li>Threat Modeling</li>
+                                </ul>
+                            </div>
+                            <img src = "./pictures/aggielab1.jpeg" width = 450 height = 350>
+                        </div>
+                    </div>
+                </div>
+                <div class = "software">
+                    <h2>Software</h2>
+                    <h3>CapMetro</h3>
+                    <div class = "capmetro">
+                        <div class = "portfoliocard">
+                            <p>CapMetro is a web-based application that gives users access to a live, interactive map view to see real-time locations of public buses in Austin, TX. I helped design this application with an amazing team of 7 other software engineers. It helps users view active routes, compare scheduled vs. actual arrival times, and store frequent routes for easy access or even save trips that they find convenient. All information was sourced from the Texas Open Data Portal and integrated through WebSockets for efficient updates. My main contributions were database management, creating stop and route api calls and creating a compute manual login workflow.
+                            <a href="https://capmetro.teamup.org/">Link</a></p>
+                            <img src = "./pictures/capmetro1.png">
+                        </div>
+                        <div class = "portfoliocard">
+                            <div class="grid-item">
+                            <h4>Tools and libraries</h4>
+                            <ul>
+                                <li>Python</li>
+                                <li>Flask</li>
+                                <li>PostGresSQL</li>
+                                <li>Gmail API</li>
+                                <li>Playwright (for testing)</li>
+                            </ul>
+                            </div>
+                            <img src = "./pictures/capmetro2.png">
+                        </div>
+                    </div>
+                </div>
+                <div class = "hardware">
+                    <h2>Hardware</h2>
+                    <h3>HackPlant</h3>
+                    <div class ="hackplant">
+                        <div class ="portfoliocard">
+                            <p>HackPlant is a smart home watering system that provides real-time updates about the conditions of their plant, and automatically waters plants when needed. Using a Raspberry Pi Pico and humidity sensor, the temperature and moisture levels of the soil are constantly recorded and uploaded to the graphs. The graphs are refreshed every 10 seconds to display the current state of the plant. There is a set threshold to automatically detect when to water the plant and when to stop delivering water. <a href="https://devpost.com/software/hackplant">Link for more information.</a></p>
+                            <img src = "./pictures/waterplant.jpeg">
+                        </div>
+                        <div class ="portfoliocard">
+                            <div class="grid-item">
+                                <h4>Tools and parts</h4>
+                                <ul>
+                                    <li>MicroPython</li>
+                                    <li>Raspberry Pi</li>
+                                    <li>AHT21 High Presicion Sensors</li>
+                                    <li>Microservo Mini Motor</li>
+                                </ul>
+                            </div>
+                            <img src="https://d112y698adiu2z.cloudfront.net/photos/production/software_photos/003/238/748/datas/gallery.jpg">
+                        </div>
+                    </div>
+                    <br></br>
+                    <h3>Pipeline CPU</h3>
+                    <div class ="cpu">
+                        <div class ="portfoliocard">
+                            <p> Building on the 5-stage RISC CPU that I built through the course of a semester in Computer Architecture, I developed a pipeline version of the same. It includes an implementation of pipeline registers to improve parallelism and instruction latency, optimized control logic, and data hazard handling to achieve better  throughput and minimizing performance penalties. <a href="https://github.com/Oshruti/Optimized-CPU">Link to Github</a>. <a href="https://medium.com/@aylia.zulfiqar29/5-stages-of-pipeline-in-computer-architecture-dc9fca11784e">Link to an article explaining it in more detail.</a></p>
+                            <img src="https://lh3.googleusercontent.com/proxy/AF6ixabhVdZTI-sWOkIWj5M0z9jbJ_2EwArEKKgIKCg9Vmhz-hCLBaCQUFeE0vXXe2Vfr4YrfPT6-7al7i3yVhJL6RmIUqGuyQBk4oQIVska6LnbvpM">
+                        </div>
+                        <div class ="portfoliocard">
+                            <div class="grid-item">
+                                <h4>Concepts and Tools</h4>
+                                <ul>
+                                    <li>Verilog</li>
+                                    <li>CPU Architecture</li>
+                                    <li>Hardware Verfication</li>
+                                    <li>Wave simulation</li>
+                                </ul>
+                            </div>
+                            <img src = "./pictures/datapath.png" width = 400 height = 350>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <div class="footer">
+                <h2>Contact Information</h2>
+                <div class = "contactinfo">
+                    <p>Email: shruti_oruganti@tamu.edu</p>
+                    <p>Connect with me: <a href="https://www.linkedin.com/in/shrutioruganti/">LinkedIn</a> <a href="https://github.com/Oshruti">Github</a></p>
+                </div>
+        </div>
+        </section>
+        <script src="script.js"></script>
+    </body>
+</html>

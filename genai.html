@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Shruti Oruganti - AI Webpage</title>
+</head>
+<body style="margin:0; font-family: Calibri, sans-serif; background-color:#fdf6e3;">
+
+    <!-- Navigation Bar -->
+    <div style="display:flex; justify-content:space-between; align-items:center; background-color:#f2f2f2; padding:15px 30px; position:sticky; top:0; box-shadow:0 2px 4px rgba(0,0,0,0.1);">
+        <div style="font-size:1.5rem; font-weight:bold;">Shruti Oruganti</div>
+        <div style="display:flex; align-items:center; gap:10px; font-size:1rem;">
+            <a href="index.html" style="text-decoration:none; color:#333;">Home</a>
+            <span style="border-left:1px solid #999; height:15px;"></span>
+            <a href="service.html" style="text-decoration:none; color:#333;">Service</a>
+            <span style="border-left:1px solid #999; height:15px;"></span>
+            <a href="qualifications.html" style="text-decoration:none; color:#333;">Qualifications</a>
+            <span style="border-left:1px solid #999; height:15px;"></span>
+            <a href="portfolio.html" style="text-decoration:none; color:#333;">Portfolio</a>
+            <span style="border-left:1px solid #999; height:15px;"></span>
+            <a href="genai.html" style="text-decoration:none; color:#333;">AI</a>
+        </div>
+    </div>
+
+    <!-- Prompt Text Box -->
+    <div style="margin:40px auto; padding:20px; background-color:#e0f7fa; border-left:6px solid #00796b; width:90%; border-radius:8px;">
+        <strong>Prompt:</strong>
+        <p>Using HTML and inline CSS, create a webpage that meets the following requirements: 1) It should have a navigation bar at the top with links to Home (index.html), Service (service.html), Qualifications (qualifications.html), Portfolio (portfolio.html), AI (genai.html - webpage you need to create). All the files will be in the same folder as the HTML file you create. Separate the links with small vertical dividers and place them towards the right side with my full name (Shruti Oruganti) aligned to the left. 2) The main content of the page should resemble the look of a bookcase. Each shelf of the bookcase should be like a grid display (one column explaining an element of abstract art and the other columns showing complex, layered abstract CSS elements). There should be three shelves representing: Color & Gradients, Shapes & Geometry, Textures & Patterns. Use Calibri font and CSS elements to create layered and complex abstract images.</p>
+
+        <strong>Revision:</strong>
+        <p>- Navbar colors have been adjusted to more subtle grays for a softer look.<br>
+        - Abstract CSS shapes now visually match the described elements:<br>
+          &nbsp;&nbsp;• Color & Gradients: overlapping colorful gradient circles.<br>
+          &nbsp;&nbsp;• Shapes & Geometry: layered geometric polygons with sharp angles.<br>
+          &nbsp;&nbsp;• Textures & Patterns: striped and dotted layered patterns for visual texture.</p>
+    </div>
+
+    <!-- Main Content: Abstract Art Bookcase -->
+    <div style="padding:40px 80px; display:flex; flex-direction:column; gap:60px;">
+
+        <!-- Shelf 1: Color & Gradients -->
+        <div style="display:grid; grid-template-columns:1fr 1fr 1fr; gap:20px; background-color:#ffe5e5; padding:20px; border-radius:10px; position:relative;">
+            <div>
+                <h2>Color & Gradients</h2>
+                <p>Exploring vibrant color interactions and layered gradients to evoke mood and depth.</p>
+            </div>
+
+            <!-- Gradient Circles -->
+            <div style="width:100%; height:200px; position:relative; border-radius:50%; background: radial-gradient(circle at top left, #ff9a9e, #fad0c4); overflow:hidden;">
+                <div style="width:120%; height:120%; position:absolute; top:-10%; left:-10%; background: conic-gradient(from 45deg, #f6d365, #fda085, #f6d365); border-radius:50%; transform:rotate(25deg);"></div>
+                <div style="width:80%; height:80%; position:absolute; top:10%; left:10%; background: linear-gradient(60deg, #c1f0f6, #a8edea); border-radius:50%;"></div>
+            </div>
+
+            <div style="width:100%; height:200px; position:relative; border-radius:50%; background: radial-gradient(circle at bottom right, #fbc2eb, #a6c1ee); overflow:hidden;">
+                <div style="width:90%; height:90%; position:absolute; top:5%; left:5%; background: linear-gradient(120deg, #ffecd2, #fcb69f); border-radius:50%;"></div>
+            </div>
+        </div>
+
+        <!-- Shelf 2: Shapes & Geometry -->
+        <div style="display:grid; grid-template-columns:1fr 1fr 1fr; gap:20px; background-color:#e0f7fa; padding:20px; border-radius:10px; position:relative;">
+            <div>
+                <h2>Shapes & Geometry</h2>
+                <p>Layered polygons and geometric forms create structure, contrast, and visual interest.</p>
+            </div>
+
+            <!-- Geometric Polygons -->
+            <div style="width:100%; height:200px; position:relative; clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%); background: linear-gradient(45deg, #6a89cc, #b8e994); overflow:hidden;">
+                <div style="width:80%; height:80%; position:absolute; top:10%; left:10%; clip-path: polygon(0 0, 100% 0, 50% 100%); background: conic-gradient(#ff6b6b, #feca57);"></div>
+            </div>
+
+            <div style="width:100%; height:200px; position:relative; clip-path: polygon(0% 0%, 100% 0%, 75% 100%, 25% 100%); background: linear-gradient(120deg, #f7d794, #f9ca24); overflow:hidden;">
+                <div style="width:100%; height:100%; position:absolute; top:0; left:0; clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%); background: repeating-linear-gradient(45deg, rgba(255,255,255,0.2) 0 5px, transparent 5px 10px);"></div>
+            </div>
+        </div>
+
+        <!-- Shelf 3: Textures & Patterns -->
+        <div style="display:grid; grid-template-columns:1fr 1fr 1fr; gap:20px; background-color:#dcedc1; padding:20px; border-radius:10px; position:relative;">
+            <div>
+                <h2>Textures & Patterns</h2>
+                <p>Layered lines, stripes, and dots create visual texture and a sense of rhythm in the composition.</p>
+            </div>
+
+            <!-- Layered Textures -->
+            <div style="width:100%; height:200px; position:relative; background: linear-gradient(60deg, #48dbfb, #1dd1a1); overflow:hidden;">
+                <div style="width:100%; height:100%; position:absolute; top:0; left:0; background: repeating-linear-gradient(45deg, rgba(255,255,255,0.3) 0 5px, transparent 5px 10px);"></div>
+                <div style="width:80%; height:80%; position:absolute; top:10%; left:10%; background: repeating-radial-gradient(circle at center, rgba(0,0,0,0.1) 0 6px, transparent 6px 12px); border-radius:50%;"></div>
+            </div>
+
+            <div style="width:100%; height:200px; position:relative; background: radial-gradient(circle at center, #ff9a9e, #fad0c4); overflow:hidden;">
+                <div style="width:100%; height:100%; position:absolute; top:0; left:0; background: repeating-linear-gradient(90deg, rgba(255,255,255,0.2) 0 4px, transparent 4px 8px);"></div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>

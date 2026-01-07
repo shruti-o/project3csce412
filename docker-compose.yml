@@ -1,0 +1,10 @@
+services:
+  nginx1:
+    image: my-nginx-container:latest
+    ports:
+      - "8080-8090:80"
+    volumes:
+      - ./:/usr/share/nginx/html
+    deploy:
+      mode: replicated
+      replicas: 5

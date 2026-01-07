@@ -1,0 +1,456 @@
+/* General webpage styling */
+.layout {
+    width: 100%;
+    display: grid;
+    grid:
+    "header" auto
+    "main" 1fr
+    "footer" auto
+    / 1fr;
+    gap: 0px;
+}
+
+.header { grid-area: header; }
+.main { grid-area: main; }
+.footer { grid-area: footer; }
+
+/*Navbar styling*/
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.2rem 2rem;
+    position: relative;
+    background-color: rgb(235, 232, 211);
+    border-bottom: 2px solid #201100;
+}
+
+.navbar a{
+    background-color: #a2ca89;
+    color: rgb(10, 10, 10);
+    border: 1px solid black;
+    width: auto;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-weight:bold;
+    padding: 15px;
+}
+
+.navbar-left {
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+}
+
+.navbar-left strong {
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+.navbar-right {
+    display: flex;
+    gap: 1rem;
+    font-size: 1rem;
+}
+
+.navbar-right a {
+    text-decoration: none;
+    color: black;
+    padding: 0 0.5rem;
+}
+
+.navbar-right a:hover {
+    background-color: rgb(240, 249, 224);
+}
+
+/*Font and Background styling*/
+@font-face {
+    font-family: 'Autocode-Regular';
+    src: url('Autocode-Regular.otf') format('opentype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+body {
+    font-family: 'Autocode-Regular';
+    margin: 0;
+    background-image: url("https://img.freepik.com/premium-photo/green-wall-with-light-green-background-white-cloud_721263-549.jpg");
+    background-size: cover;
+}
+
+.content {
+    display:flex;
+    margin-left: 5%;
+    margin-right: 5%;
+    gap: 5%;
+    min-height: 100%;
+    /* align-items: center;   */
+}
+
+
+.intro{
+    margin-top:8%;
+}
+.intro img{
+    width: 400px;
+    height: 400px;
+}
+
+/*Contact Information styling */
+.footer {
+    background-color: rgb(235, 232, 211);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 2rem;
+    position: relative;
+    border-top: 2px solid #201100;
+}
+
+/*Buttons that go to other pages*/
+.linkbuttons {
+    display: flex;              
+    justify-content: center;    
+    gap: 30px;
+    max-height: 150px;
+    margin-bottom: 5%;
+    margin-top: 5%;
+}
+
+.linkbuttons a{
+    background-color: #bad7a7;
+    color: rgb(10, 10, 10);
+    border: 1px solid black;
+    width: 150px;
+    height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    font-family: 'Avenir LT 35 Light';
+    text-decoration: none;
+    font-weight:bold;
+    font-family: "Autocode-Regular";
+}
+
+.linkbuttons a:hover {
+    background-color: #fbf2e8;
+}
+
+.linkbuttons {
+    order: 1;
+}
+
+/*Divider*/
+.bar {
+  position: relative;
+  width: 3px;
+  background-color: black;
+  flex-shrink: 0;
+  align-self: stretch;
+  height: var(--bar-height);
+}
+
+.circle {
+  position: absolute;
+  top: 10.5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 28px;
+  height: 28px;
+  background-color: #228B22;
+  border-radius: 50%;
+  border: 3px solid rgb(8, 8, 8);
+  z-index: 2;
+}
+
+/*About Me paragraph*/
+.aboutme1{
+    font-size: 0.9rem;
+}
+
+.aboutme img {
+    margin-top: 2%;
+    width: 400px;
+}
+
+.pic {
+    text-align: center;
+}
+
+.left {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  gap: 10px;
+  margin: 5%;
+}
+
+/*Heading styling */
+.pageh1 {
+    text-align: center;
+    font-size: 2rem;
+    text-decoration: underline;
+
+}
+
+/*Qualifications*/
+
+.qualintro{
+    line-height:1.5em;
+    margin-top: 5%;
+    margin-left: 5%;
+    text-align: justify;
+} 
+.topHalf {
+  display: flex;
+  align-items: center; 
+  gap: 50px;
+  margin: 50px 0px;
+  line-height: 1.5em;
+  justify-content: center;
+}
+
+.skills {
+    font-size: larger;
+    background-color: #a2ca89;
+    padding-right:3%;
+}
+
+.skills h2 {
+    font-family: garamond;
+    text-align: center;
+}
+
+.interests {
+    font-size: larger;
+    background-color: #a2ca89;
+    padding-right:3%;
+}
+
+.interests h2 {
+    font-family: garamond;
+    text-align: center;
+}
+
+.leftqualification {
+    grid-template-rows: auto auto;
+}
+
+.qualcontent {
+    display: flex;
+    min-width: 45%;
+    gap: 5%;
+    margin-right: 3%;
+    margin-left: 3%;
+}
+
+.resume {
+    justify-content: center;
+    text-align: center;
+}
+
+.resume iframe {
+    width: 700px;
+    height: 600px;
+}
+
+
+/* Service page styling */
+.servicecol {
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-left: 3%;
+    margin-right: 3%;
+    gap: 20px;
+    font-size: 0.9rem;
+    justify-content: center;
+}
+
+.vex {
+    background-color: #bad7a7;
+    padding:5%;
+}
+
+.vex h2{
+    text-align: center;
+}
+
+.vexContent img {
+  width: 390px;
+  height: 280px;
+}
+
+.txsef {
+    background-color: #bad7a7;
+    padding:5%;
+}
+
+.txsef h2{
+    text-align: center;
+}
+
+.txsefContent img {
+  width: 390px;
+  height: 280px;
+}
+.bigeventContent img {
+  width: 390px;
+  height: 280px;
+}
+
+.bigevent {
+    background-color: #bad7a7;
+    padding:5%;
+}
+
+.bigevent h2{
+    text-align: center;
+}
+
+.future {
+    line-height: 1.5em;
+    background-color: rgb(199, 217, 154);
+    border: 1px black;
+    padding:35px;
+    margin:40px;
+}
+
+.future h2{
+    text-align: center;
+}
+
+/*Portfolio*/
+
+.portfolioBody p {
+    font-size:0.9rem;
+}
+
+.aggiesLab {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 30px;
+    margin:0px 15%;
+    line-height: 1.5rem;
+}
+
+.portfoliocard {
+    display: flex;
+    flex-direction: column;
+    background-color: #bad7a7;
+    margin: 3%;
+    padding: 5%;
+    font-size: 0.9rem;
+    gap: 3%;
+}
+
+.aggiesLab img {
+    order: -1;
+}
+
+.portfoliocard img {
+    width: 100%;
+    height: auto;
+}
+
+.research {
+    padding: 20px;
+    margin:0px;
+}
+
+.research h2{
+    margin-left:16%;
+    font-size: 1.7em;
+}
+
+.software {
+    padding: 20px;
+    margin:0px;
+}
+
+.software h2{
+    margin-left:16%;
+    font-size: 1.7em;
+}
+
+.software h3{
+    margin-left:16%;
+    font-size: 1.4em;
+}
+
+.capmetro {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 30px;
+    margin:0px 15%;
+    line-height: 1.5rem;
+}
+
+.capmetro img {
+    order: -1;
+}
+
+.hackplant {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 30px;
+    margin:0px 15%;
+    line-height: 1.5rem;
+}
+
+.hackplant img {
+    order: -1;
+}
+
+.hardware {
+    padding: 20px;
+    margin:0px;
+}
+
+.hardware h2{
+    margin-left:16%;
+    font-size: 1.7em;
+}
+
+.hardware h3{
+    margin-left:16%;
+    font-size: 1.4em;
+}
+
+.cpu {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 30px;
+    margin:0px 15%;
+    line-height: 1.5rem;
+}
+
+.cpu img {
+    order: -1;      
+}
+
+.aggiesLab h4 {
+  justify-content: center;
+  align-items: center;
+  font-size:1.3rem;
+}
+
+.hackplant h4 {
+  justify-content: center;
+  align-items: center;
+  font-size:1.3rem;
+}
+
+.capmetro h4 {
+  justify-content: center;
+  align-items: center;
+  font-size:1.3rem;
+}
+
+.cpu h4 {
+  justify-content: center;
+  align-items: center;
+  font-size:1.3rem;
+}
